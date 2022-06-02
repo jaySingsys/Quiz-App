@@ -8,7 +8,9 @@
 import UIKit
 
 class ThirdViewController: UIViewController {
+    //variable
     var result:String = ""
+//Total Score label outlet
     @IBOutlet weak var totalScore: UILabel!
     
     override func viewDidLoad() {
@@ -19,9 +21,7 @@ class ThirdViewController: UIViewController {
     @IBAction func goToFirstScreen(_ sender: UIButton) {
         if let firstVC = self.storyboard?.instantiateViewController(identifier: "ViewController") as? ViewController{
             self.navigationController?.pushViewController(firstVC, animated: true)
-            
     }
-    
 }
     /*
     // MARK: - Navigation
@@ -32,5 +32,4 @@ class ThirdViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }

@@ -114,7 +114,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="45L-uS-pYj"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="25"/>
                                 <state key="normal" title="Option 4">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -177,9 +177,6 @@
                                         <state key="normal" title="Next">
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
-                                        <connections>
-                                            <action selector="nextQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GLI-Fd-kXV"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -263,7 +260,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trophy1" translatesAutoresizingMaskIntoConstraints="NO" id="iat-Cz-PSc">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trophy1" translatesAutoresizingMaskIntoConstraints="NO" id="iat-Cz-PSc">
                                 <rect key="frame" x="81" y="368" width="252" height="186"/>
                                 <color key="backgroundColor" systemColor="linkColor"/>
                                 <constraints>
@@ -287,6 +284,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pXU-ZD-PHu"/>
                         <color key="backgroundColor" systemColor="linkColor"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ubx-lV-Kxh" firstAttribute="leading" secondItem="pXU-ZD-PHu" secondAttribute="leading" constant="76" id="2he-tf-AqI"/>
                             <constraint firstItem="iat-Cz-PSc" firstAttribute="leading" secondItem="pXU-ZD-PHu" secondAttribute="leading" constant="81" id="8fd-Ye-l8B"/>
@@ -310,7 +308,6 @@
         <!--Navigation Controller-->
         <scene sceneID="OVG-QD-wwP">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Cpv-A9-Dpg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="jmL-nQ-2qF" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedTopBarMetrics"/>
@@ -322,13 +319,18 @@
                         <segue destination="8uf-9F-ufF" kind="relationship" relationship="rootViewController" id="S4a-Zi-vdt"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cpv-A9-Dpg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2131.8840579710145" y="64.955357142857139"/>
         </scene>
     </scenes>
+    <color key="tintColor" name="AccentColor"/>
     <resources>
         <image name="quiz1" width="450" height="296.5"/>
         <image name="trophy1" width="300" height="300"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
